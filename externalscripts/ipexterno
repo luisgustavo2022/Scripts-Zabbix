@@ -1,0 +1,6 @@
+#!/bin/bash
+# Script para obter o IP público e remover os pontos 
+
+ip=$(curl -s ipinfo.io/ip) 
+echo "$ip" | sed 's/\.//g'#!/bin/bash
+
